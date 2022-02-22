@@ -1,0 +1,22 @@
+{
+  "name": "dispatch-event-by-name",
+  "version": "1.0.1",
+  "description": "compatible tool for dispatchEvent()",
+  "main": "dispatch-event-by-name.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dispatchEvent"
+  ],
+  "author": "fwg",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adf0001/dispatch-event-by-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adf0001/dispatch-event-by-name/issues"
+  },
+  "homepage": "https://github.com/adf0001/dispatch-event-by-name#readme"
+}
