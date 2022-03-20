@@ -1,6 +1,6 @@
 {
   "name": "dispatch-event-by-name",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "compatible tool for dispatchEvent()",
   "main": "dispatch-event-by-name.js",
   "scripts": {
