@@ -22,6 +22,14 @@ module.exports = {
 		dispatch_event_by_name(_ele('divResult3').firstChild.firstChild, "click", {bubbles:true, delay:500});
 	},
 
+	".click": function (done) {
+		_ele('divResult3').innerHTML = '<span myattr=11><span>aaa</span></span>';
+
+		_ele('divResult3').firstChild.onclick = function () { done(false); };
+
+		dispatch_event_by_name.click(_ele('divResult3').firstChild.firstChild);
+	},
+
 };
 
 // for html page
