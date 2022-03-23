@@ -35,9 +35,12 @@ var dispatchEventByName = function (el, eventName, options) {
 }
 
 //a click tool
-var click = function (el) {
-	if (el.click) el.click();	//.click is null for not-input element in safari 5.x in windows
-	else dispatchEventByName(el, "click", true);
+var click = function (el, delay) {
+	if (el.click) {	//.click is null for not-input element in safari 5.x in windows
+		if (delay >= 0) { setTimeout(function () { el.click(); }, delay); }
+		else { el.click(); }
+	}
+	else dispatchEventByName(el, "click", { bubbles: true, delay: delay });
 }
 
 //module

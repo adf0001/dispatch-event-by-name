@@ -19,7 +19,7 @@ module.exports = {
 
 		_ele('divResult3').firstChild.onclick = function () { done(false); };
 
-		dispatch_event_by_name(_ele('divResult3').firstChild.firstChild, "click", {bubbles:true, delay:500});
+		dispatch_event_by_name(_ele('divResult3').firstChild.firstChild, "click", { bubbles: true, delay: 500 });
 	},
 
 	".click": function (done) {
@@ -27,7 +27,7 @@ module.exports = {
 
 		_ele('divResult3').firstChild.onclick = function () { done(false); };
 
-		dispatch_event_by_name.click(_ele('divResult3').firstChild.firstChild);
+		dispatch_event_by_name.click(_ele('divResult3').firstChild.firstChild, 500);
 	},
 
 };
